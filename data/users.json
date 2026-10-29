@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "judge01",
+      "display": "评审专家体验账号",
+      "role": "judge",
+      "salt": "f085323f347d015572f649dacfc58be2",
+      "hash": "8194b59af53813209097e9595f38ef8b19011cfd53f8c5c670b73aeda176d6f4",
+      "iterations": 120000
+    },
+    {
+      "username": "judge02",
+      "display": "评审专家体验账号",
+      "role": "judge",
+      "salt": "bd566896420d924d3e54307e17ddf427",
+      "hash": "ea0b810f05da5d0f1536f4a27eec6c85ff70539919d5375b268d3a78119535b0",
+      "iterations": 120000
+    },
+    {
+      "username": "demo",
+      "display": "公开演示账号",
+      "role": "demo",
+      "salt": "153109eac8fe740af1793fa978bab340",
+      "hash": "88a0af137a45cc121f46c443647bfb35487cdee00d7bd4a631ee73a8ceaeac41",
+      "iterations": 120000
+    }
+  ]
+}

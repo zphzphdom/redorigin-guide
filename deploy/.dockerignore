@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+docs/
+eval/
+tools/
+tunnel.log
+tunnel.err.log
+data/usage.jsonl

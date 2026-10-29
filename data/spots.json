@@ -1,0 +1,472 @@
+[
+  {
+    "id": "yanan_memorial",
+    "kb_id": "spot_memorial",
+    "name": "延安革命纪念馆",
+    "area": "城区",
+    "level": "延安革命纪念地景区（5A）核心点",
+    "minutes": 120,
+    "priority": 5,
+    "order": 1,
+    "must": true,
+    "one_line": "馆藏文物3.5万余件，十三年历程的完整叙事",
+    "official": "微信公众号“延安革命纪念馆”或官网 yagmjng.com（2024年6月4日起实名预约）",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–17:00；冬季 8:00–16:00",
+    "booking": "实名预约：微信公众号“延安革命纪念馆”、官网 yagmjng.com",
+    "phone": "",
+    "tags": [
+      "红色",
+      "纪念馆",
+      "研学",
+      "室内"
+    ],
+    "aliases": [
+      "革命纪念馆",
+      "纪念馆"
+    ]
+  },
+  {
+    "id": "yangjialing",
+    "kb_id": "spot_yangjialing",
+    "name": "杨家岭革命旧址",
+    "area": "城区",
+    "level": "延安革命纪念地景区（5A）核心点",
+    "minutes": 70,
+    "priority": 5,
+    "order": 2,
+    "must": true,
+    "one_line": "1938–1947年中共中央驻地，党的七大会址",
+    "official": "景区电话预约 0911-2330511",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–17:30；冬季 8:00–17:00",
+    "booking": "电话预约 0911-2330511",
+    "phone": "0911-2330511",
+    "tags": [
+      "红色",
+      "旧址",
+      "研学"
+    ],
+    "aliases": [
+      "杨家岭"
+    ]
+  },
+  {
+    "id": "zaoyuan",
+    "kb_id": "spot_zaoyuan",
+    "name": "枣园革命旧址",
+    "area": "城区",
+    "level": "延安革命纪念地景区（5A）核心点",
+    "minutes": 70,
+    "priority": 5,
+    "order": 3,
+    "must": true,
+    "one_line": "1943–1947年中共中央书记处驻地",
+    "official": "景区电话预约 0911-2852223",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–17:30；冬季 8:00–17:00",
+    "booking": "电话预约 0911-2852223",
+    "phone": "0911-2852223",
+    "tags": [
+      "红色",
+      "旧址",
+      "亲子",
+      "研学"
+    ],
+    "aliases": [
+      "枣园"
+    ]
+  },
+  {
+    "id": "baotashan",
+    "kb_id": "spot_baotashan",
+    "name": "宝塔山",
+    "area": "城区",
+    "level": "延安革命纪念地景区（5A）核心点",
+    "minutes": 60,
+    "priority": 5,
+    "order": 4,
+    "must": true,
+    "one_line": "延安的城市象征，登塔可俯瞰延河与全城",
+    "official": "官方表列微信公众号“智游陕北”预约（2020年口径，建议以现场公告为准）",
+    "ticket": "免费",
+    "open_time": "夏季 7:30–18:00；冬季 8:00–17:30",
+    "booking": "微信公众号“智游陕北”（2020年口径，现行渠道请以公告为准）",
+    "phone": "",
+    "tags": [
+      "红色",
+      "地标",
+      "夜景",
+      "摄影"
+    ],
+    "aliases": [
+      "宝塔",
+      "嘉岭山"
+    ]
+  },
+  {
+    "id": "wangjiaping",
+    "kb_id": "spot_wangjiaping",
+    "name": "王家坪革命旧址",
+    "area": "城区",
+    "level": "3A",
+    "minutes": 60,
+    "priority": 3,
+    "order": 5,
+    "must": false,
+    "one_line": "1937–1947年中央军委、八路军总部驻地",
+    "official": "景区电话预约 0911-2338384",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–18:00；冬季 8:00–17:30",
+    "booking": "电话预约 0911-2338384",
+    "phone": "0911-2338384",
+    "tags": [
+      "红色",
+      "旧址",
+      "轻松"
+    ],
+    "aliases": [
+      "王家坪"
+    ]
+  },
+  {
+    "id": "fenghuangshan",
+    "kb_id": "spot_fenghuangshan",
+    "name": "凤凰山麓革命旧址",
+    "area": "城区",
+    "level": "3A",
+    "minutes": 50,
+    "priority": 3,
+    "order": 6,
+    "must": false,
+    "one_line": "1937年1月中共中央进驻延安的首站",
+    "official": "景区电话预约 0911-2119815",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–18:00；冬季 8:30–17:00",
+    "booking": "电话预约 0911-2119815",
+    "phone": "0911-2119815",
+    "tags": [
+      "红色",
+      "旧址",
+      "轻松"
+    ],
+    "aliases": [
+      "凤凰山"
+    ]
+  },
+  {
+    "id": "luyi",
+    "kb_id": "spot_luyi",
+    "name": "鲁迅艺术文学院旧址",
+    "area": "城区",
+    "level": "3A（延安鲁艺景区）",
+    "minutes": 50,
+    "priority": 3,
+    "order": 7,
+    "must": false,
+    "one_line": "中共创办的第一所培养抗日文艺人才的高校",
+    "official": "景区电话预约 0911-2293593",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–17:30；冬季 8:00–17:00",
+    "booking": "电话预约 0911-2293593",
+    "phone": "0911-2293593",
+    "tags": [
+      "红色",
+      "旧址",
+      "亲子",
+      "非遗"
+    ],
+    "aliases": [
+      "鲁艺",
+      "桥儿沟"
+    ]
+  },
+  {
+    "id": "qingliangshan",
+    "kb_id": "spot_qingliangshan",
+    "name": "清凉山",
+    "area": "城区",
+    "level": "3A",
+    "minutes": 60,
+    "priority": 2,
+    "order": 8,
+    "must": false,
+    "one_line": "抗战时期新华社、解放日报、延安新华广播电台驻地",
+    "official": "景区电话预约 0911-2112719",
+    "ticket": "40元",
+    "open_time": "夏季 8:00–18:00",
+    "booking": "电话预约 0911-2112719",
+    "phone": "0911-2112719",
+    "tags": [
+      "红色",
+      "旧址",
+      "摄影"
+    ],
+    "aliases": [
+      "清凉山新闻纪念馆"
+    ]
+  },
+  {
+    "id": "xibeiju",
+    "kb_id": "spot_xibeiju",
+    "name": "中共中央西北局旧址",
+    "area": "城区",
+    "level": "延安革命纪念地景区（5A）核心点",
+    "minutes": 45,
+    "priority": 3,
+    "order": 9,
+    "must": false,
+    "one_line": "1942–1947年西北局驻地",
+    "official": "景区电话预约 0911-2118160",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–17:30；冬季 8:00–17:00",
+    "booking": "电话预约 0911-2118160",
+    "phone": "0911-2118160",
+    "tags": [
+      "红色",
+      "旧址",
+      "轻松"
+    ],
+    "aliases": [
+      "西北局"
+    ]
+  },
+  {
+    "id": "nanniwan",
+    "kb_id": "spot_nanniwan",
+    "name": "南泥湾",
+    "area": "南泥湾",
+    "level": "4A",
+    "minutes": 120,
+    "priority": 4,
+    "order": 1,
+    "must": true,
+    "one_line": "1941年三五九旅垦荒，大生产运动的典范",
+    "official": "景区电话预约 0911-8222315",
+    "ticket": "免费",
+    "open_time": "全天开放（大生产纪念馆 8:00–17:00）",
+    "booking": "电话预约 0911-8222315",
+    "phone": "0911-8222315",
+    "tags": [
+      "红色",
+      "自然",
+      "亲子",
+      "研学"
+    ],
+    "aliases": [
+      "南泥湾大生产纪念馆",
+      "三五九旅"
+    ]
+  },
+  {
+    "id": "qiankunwan",
+    "kb_id": "spot_qiankunwan",
+    "name": "延川黄河乾坤湾",
+    "area": "延川",
+    "level": "5A",
+    "minutes": 120,
+    "priority": 4,
+    "order": 1,
+    "must": true,
+    "one_line": "320度以上大转弯，黄河蛇曲地质公园核心区",
+    "official": "景区电话预约 0911-8588666",
+    "ticket": "80元",
+    "open_time": "4月1日–10月31日 8:00–18:30；11月1日–3月31日 8:00–17:30",
+    "booking": "电话预约 0911-8588666",
+    "phone": "0911-8588666",
+    "tags": [
+      "自然",
+      "黄河",
+      "摄影",
+      "民俗",
+      "非遗"
+    ],
+    "aliases": [
+      "乾坤湾",
+      "黄河蛇曲"
+    ]
+  },
+  {
+    "id": "hukou",
+    "kb_id": "spot_hukou",
+    "name": "黄河壶口瀑布",
+    "area": "宜川",
+    "level": "5A",
+    "minutes": 100,
+    "priority": 4,
+    "order": 1,
+    "must": true,
+    "one_line": "黄河上唯一的黄色大瀑布，汛期水雾、冬季冰瀑",
+    "official": "景区电话预约 0911-4831234",
+    "ticket": "80元",
+    "open_time": "4–9月 7:00–18:30；10–3月 8:00–17:00",
+    "booking": "电话预约 0911-4831234",
+    "phone": "0911-4831234",
+    "tags": [
+      "自然",
+      "黄河",
+      "摄影",
+      "亲子"
+    ],
+    "aliases": [
+      "壶口",
+      "壶口瀑布"
+    ]
+  },
+  {
+    "id": "huangdiling",
+    "kb_id": "spot_huangdiling",
+    "name": "黄帝陵",
+    "area": "黄陵",
+    "level": "5A",
+    "minutes": 120,
+    "priority": 4,
+    "order": 1,
+    "must": true,
+    "one_line": "《史记》记载的唯一黄帝陵，清明公祭之地",
+    "official": "景区电话预约 0911-5212742",
+    "ticket": "旺季75元、淡季50元",
+    "open_time": "4–9月 7:30–17:30；10–3月 7:50–17:00",
+    "booking": "电话预约 0911-5212742",
+    "phone": "0911-5212742",
+    "tags": [
+      "文化",
+      "祭祖",
+      "古柏",
+      "研学"
+    ],
+    "aliases": [
+      "黄帝陵景区",
+      "桥山"
+    ]
+  },
+  {
+    "id": "wuyi_memorial",
+    "kb_id": "spot_wuyi_memorial",
+    "name": "吴起中央红军长征胜利纪念园",
+    "area": "吴起",
+    "level": "4A",
+    "minutes": 90,
+    "priority": 4,
+    "order": 1,
+    "must": false,
+    "one_line": "1935 年 10 月中央红军长征到达吴起镇，长征胜利结束",
+    "official": "景区电话 0911-7615205",
+    "ticket": "免费",
+    "open_time": "夏季 8:30–17:30；冬季 8:30–17:00",
+    "booking": "电话咨询 0911-7615205",
+    "phone": "0911-7615205",
+    "tags": [
+      "红色",
+      "长征",
+      "研学"
+    ],
+    "aliases": [
+      "吴起纪念园",
+      "长征胜利纪念园"
+    ]
+  },
+  {
+    "id": "ansai_culture",
+    "kb_id": "spot_ansai_culture",
+    "name": "安塞区文化艺术馆",
+    "area": "安塞",
+    "level": "3A",
+    "minutes": 90,
+    "priority": 3,
+    "order": 1,
+    "must": false,
+    "one_line": "腰鼓、剪纸、农民画、陕北说书的集中体验地",
+    "official": "场馆电话 0911-6216219",
+    "ticket": "免费",
+    "open_time": "夏季 8:00–12:00、14:30–17:30；冬季 8:00–12:00、14:00–17:00",
+    "booking": "电话咨询 0911-6216219",
+    "phone": "0911-6216219",
+    "tags": [
+      "非遗",
+      "民俗",
+      "亲子",
+      "体验"
+    ],
+    "aliases": [
+      "安塞文化艺术馆",
+      "安塞文化馆"
+    ]
+  },
+  {
+    "id": "luochuan_meeting",
+    "kb_id": "spot_luochuan_meeting",
+    "name": "洛川会议纪念馆",
+    "area": "洛川",
+    "level": "3A",
+    "minutes": 70,
+    "priority": 3,
+    "order": 1,
+    "must": false,
+    "one_line": "1937 年 8 月洛川会议召开地，确定全面抗战路线",
+    "official": "景区电话 0911-3861545",
+    "ticket": "免费",
+    "open_time": "9:00–17:00",
+    "booking": "电话咨询 0911-3861545",
+    "phone": "0911-3861545",
+    "tags": [
+      "红色",
+      "旧址",
+      "研学"
+    ],
+    "aliases": [
+      "洛川会议旧址"
+    ]
+  },
+  {
+    "id": "zhidan_memorial",
+    "kb_id": "spot_zhidan_memorial",
+    "name": "刘志丹烈士陵园",
+    "area": "志丹",
+    "level": "3A",
+    "minutes": 60,
+    "priority": 3,
+    "order": 1,
+    "must": false,
+    "one_line": "纪念西北红军和西北革命根据地主要创建人刘志丹",
+    "official": "陵园电话 0911-6621695",
+    "ticket": "免费",
+    "open_time": "夏季 8:30–17:30；冬季 8:30–17:00",
+    "booking": "电话咨询 0911-6621695",
+    "phone": "0911-6621695",
+    "tags": [
+      "红色",
+      "纪念",
+      "研学"
+    ],
+    "aliases": [
+      "志丹陵园"
+    ]
+  },
+  {
+    "id": "waYaobao",
+    "kb_id": "spot_wayaobao",
+    "name": "瓦窑堡革命旧址",
+    "area": "子长",
+    "level": "全国重点文物保护单位（未列入 A 级景区名录）",
+    "minutes": 70,
+    "priority": 4,
+    "order": 1,
+    "must": false,
+    "one_line": "1935 年 12 月瓦窑堡会议召开地，抗日民族统一战线策源地",
+    "official": "子长市文旅部门 / 旧址管理单位（门票与开放时间未核实）",
+    "ticket": "未核实",
+    "open_time": "未核实（出行前请查询官方公告）",
+    "booking": "未核实",
+    "phone": "",
+    "tags": [
+      "红色",
+      "旧址",
+      "研学"
+    ],
+    "aliases": [
+      "瓦窑堡会议旧址",
+      "瓦窑堡"
+    ]
+  }
+]

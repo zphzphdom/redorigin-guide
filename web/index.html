@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>红源智导 · 革命老区 AI 导览智能体</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- 登录 -->
+<div class="login-wrap" id="loginView">
+  <div class="login-card">
+    <div class="login-hero">
+      <span class="hero-badge">第二届人工智能应用创新大赛 · 命题作品</span>
+      <h1>红源智导</h1>
+      <p>面向革命老区延安的「红色文旅 + 农产品 IP」一体化 AI 导览智能体。<br>让每一次到访更懂历史，让每一颗果子卖得更远。</p>
+      <ul class="hero-list">
+        <li>景点讲解逐条标注来源，不编造史实</li>
+        <li>1–4 天主题行程，点位只取自已核验知识库</li>
+        <li>洛川苹果等农品 IP 文案，自动做广告法合规检查</li>
+        <li>票价、开放时间等实时信息不猜，直给官方入口</li>
+      </ul>
+    </div>
+    <div class="login-form">
+      <h2>评审登录</h2>
+      <div class="sub">请输入作品提交说明中提供的账号与密码</div>
+      <div class="field">
+        <label>账号</label>
+        <input id="username" autocomplete="username" placeholder="请输入账号">
+      </div>
+      <div class="field">
+        <label>密码</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="请输入密码">
+      </div>
+      <button class="btn-primary" onclick="doLogin()">进入智能体</button>
+      <div class="err" id="loginErr"></div>
+      <div class="login-hint">本作品为参赛演示环境（本地部署 + 临时公网入口），数据仅用于评审体验；会话日志仅记录问句/意图/时延，不含敏感个人信息。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 应用 -->
+<div class="app" id="appView">
+  <aside class="side">
+    <div class="brand">
+      <div class="brand-mark">红</div>
+      <div>
+        <div class="brand-name">红源智导</div>
+        <div class="brand-sub">REDORIGIN GUIDE v1.3</div>
+      </div>
+    </div>
+    <div class="nav-item on" data-page="chat"><span class="ico">◉</span> 智能导览</div>
+    <div class="nav-item" data-page="plan"><span class="ico">▤</span> 行程规划</div>
+    <div class="nav-item" data-page="ip"><span class="ico">✦</span> 农品 IP 工坊</div>
+    <div class="nav-item" data-page="kb"><span class="ico">▣</span> 知识库溯源</div>
+    <div class="nav-item" data-page="admin"><span class="ico">◫</span> 运营看板</div>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar" id="userAva">评</div>
+        <div><span id="userName">评审</span><small id="userRole">judge</small></div>
+      </div>
+      服务区域：陕西·延安<br>
+      知识库：<span id="kbCount">—</span> 条事实 · 全部带源
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="dot"></div>
+      <h2 id="pageTitle">智能导览</h2>
+      <span class="meta" id="pageMeta">延安 · 红色文旅与农产品 IP</span>
+      <div class="spacer"></div>
+      <span class="tagline">事实可溯源 · 边界可解释</span>
+    </div>
+
+    <!-- 对话页 -->
+    <section class="page" id="page-chat">
+      <div class="chat-shell" id="messages"></div>
+    </section>
+
+    <!-- 行程页 -->
+    <section class="page hidden" id="page-plan">
+      <div class="panel">
+        <h3>主题行程生成</h3>
+        <div class="lead">按天数、主题与节奏，从知识库已核验点位中组合路线；同一天只在同一片区活动，跨县区单独预留车程。</div>
+        <div class="form-row">
+          <div class="field"><label>天数</label>
+            <select id="planDays"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+          <div class="field"><label>主题</label>
+            <select id="planTheme"><option>红色研学</option><option>亲子家庭</option><option>银发慢游</option><option>黄河摄影</option><option>非遗民俗</option></select></div>
+          <div class="field"><label>节奏</label>
+            <select id="planPace"><option>轻松</option><option selected>标准</option><option>紧凑</option></select></div>
+          <div class="field" style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn" onclick="genPlan()">生成路线</button></div>
+        </div>
+        <div id="planOut"><div class="empty">尚未生成。选择条件后点击「生成路线」。</div></div>
+      </div>
+    </section>
+
+    <!-- IP 工坊 -->
+    <section class="page hidden" id="page-ip">
+      <div class="panel">
+        <h3>农产品 IP 内容工坊</h3>
+        <div class="lead">所有事实槽位来自知识库（地理标志、种植面积、产量、品牌价值等），只做语言组织；生成后自动执行广告法风险词检查。</div>
+        <div class="form-row">
+          <div class="field"><label>产品</label><select id="ipProduct"></select></div>
+          <div class="field"><label>渠道</label>
+            <select id="ipChannel"><option>直播</option><option>短视频</option><option>电商详情页</option><option>朋友圈</option></select></div>
+          <div class="field"><label>对象</label>
+            <select id="ipAudience"><option>游客</option><option>企业采购</option></select></div>
+          <div class="field" style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn" onclick="genCopy()">生成文案</button></div>
+        </div>
+        <div id="ipOut"><div class="empty">选择产品与渠道后生成。</div></div>
+      </div>
+    </section>
+
+    <!-- 知识库 -->
+    <section class="page hidden" id="page-kb">
+      <div class="panel">
+        <h3>知识库溯源</h3>
+        <div class="lead">每条事实都记录来源机构、文件标题与发布日期；回答时按检索命中回填，可逐条核对。</div>
+        <div class="form-row">
+          <div class="field" style="flex:3"><input class="input" id="kbQ" placeholder="检索关键词，如：洛川苹果 / 南泥湾 / 旅游人次"></div>
+          <div class="field" style="flex:0 0 auto;display:flex;align-items:flex-end"><button class="btn ghost" onclick="searchKb()">检索</button></div>
+        </div>
+        <div id="kbOut"><div class="empty">输入关键词检索知识库。</div></div>
+      </div>
+    </section>
+
+    <!-- 运营看板 -->
+    <section class="page hidden" id="page-admin">
+      <div class="panel">
+        <h3>运营看板</h3>
+        <div class="lead">统计来自真实会话日志（data/usage.jsonl），用于分析意图分布与响应时延。</div>
+        <div class="stat-grid" id="statGrid"></div>
+        <div id="adminBody"></div>
+      </div>
+    </section>
+
+    <div class="composer-wrap" id="composerWrap">
+      <div class="quick" id="quickRow"></div>
+      <div class="composer">
+        <textarea id="input" rows="1" placeholder="试试：帮我安排延安两天红色研学 / 介绍枣园 / 给洛川苹果写一段直播开场"></textarea>
+        <button class="send" id="sendBtn" onclick="send()">发送</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

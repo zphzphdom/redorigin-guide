@@ -1,0 +1,6 @@
+﻿# 防止密钥进入版本库
+data/config.json
+.env
+tools/cloudflared.exe
+tunnel*.log
+cloudflared.log

@@ -1,0 +1,534 @@
+{
+  "total": 46,
+  "correct": 46,
+  "accuracy": 1.0,
+  "by_intent": {
+    "greeting": {
+      "n": 1,
+      "ok": 1,
+      "acc": 1.0
+    },
+    "about": {
+      "n": 1,
+      "ok": 1,
+      "acc": 1.0
+    },
+    "route": {
+      "n": 5,
+      "ok": 5,
+      "acc": 1.0
+    },
+    "spot": {
+      "n": 11,
+      "ok": 11,
+      "acc": 1.0
+    },
+    "recommend": {
+      "n": 2,
+      "ok": 2,
+      "acc": 1.0
+    },
+    "product": {
+      "n": 6,
+      "ok": 6,
+      "acc": 1.0
+    },
+    "ip": {
+      "n": 5,
+      "ok": 5,
+      "acc": 1.0
+    },
+    "service": {
+      "n": 6,
+      "ok": 6,
+      "acc": 1.0
+    },
+    "transport": {
+      "n": 3,
+      "ok": 3,
+      "acc": 1.0
+    },
+    "policy": {
+      "n": 4,
+      "ok": 4,
+      "acc": 1.0
+    },
+    "history": {
+      "n": 2,
+      "ok": 2,
+      "acc": 1.0
+    }
+  },
+  "latency_ms": {
+    "avg": 1122.36,
+    "p50": 1070.34,
+    "p95": 2225.25,
+    "max": 2681.88
+  },
+  "source_coverage": 1.0,
+  "avg_chars": 481.1,
+  "kb_docs": 38,
+  "errors": [],
+  "rows": [
+    {
+      "q": "你好",
+      "expected": "greeting",
+      "got": "greeting",
+      "ok": true,
+      "latency_ms": 2112.64,
+      "sources": 3,
+      "chars": 101,
+      "intent": "greeting"
+    },
+    {
+      "q": "你是谁，能做什么",
+      "expected": "about",
+      "got": "about",
+      "ok": true,
+      "latency_ms": 1908.78,
+      "sources": 3,
+      "chars": 108,
+      "intent": "about"
+    },
+    {
+      "q": "帮我安排延安两天红色研学",
+      "expected": "route",
+      "got": "route",
+      "ok": true,
+      "latency_ms": 996.68,
+      "sources": 3,
+      "chars": 786,
+      "intent": "route"
+    },
+    {
+      "q": "三天亲子游怎么安排",
+      "expected": "route",
+      "got": "route",
+      "ok": true,
+      "latency_ms": 542.01,
+      "sources": 3,
+      "chars": 1146,
+      "intent": "route"
+    },
+    {
+      "q": "带父母去延安，轻松的路线",
+      "expected": "route",
+      "got": "route",
+      "ok": true,
+      "latency_ms": 602.15,
+      "sources": 3,
+      "chars": 802,
+      "intent": "route"
+    },
+    {
+      "q": "一日游精华路线",
+      "expected": "route",
+      "got": "route",
+      "ok": true,
+      "latency_ms": 569.0,
+      "sources": 3,
+      "chars": 793,
+      "intent": "route"
+    },
+    {
+      "q": "延安自驾怎么玩比较顺",
+      "expected": "route",
+      "got": "route",
+      "ok": true,
+      "latency_ms": 613.75,
+      "sources": 3,
+      "chars": 1035,
+      "intent": "route"
+    },
+    {
+      "q": "介绍宝塔山",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1868.45,
+      "sources": 2,
+      "chars": 189,
+      "intent": "spot"
+    },
+    {
+      "q": "杨家岭有什么历史",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 842.89,
+      "sources": 3,
+      "chars": 105,
+      "intent": "spot"
+    },
+    {
+      "q": "枣园革命旧址值不值得去",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1329.04,
+      "sources": 4,
+      "chars": 160,
+      "intent": "spot"
+    },
+    {
+      "q": "延安革命纪念馆看点",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1486.8,
+      "sources": 4,
+      "chars": 164,
+      "intent": "spot"
+    },
+    {
+      "q": "南泥湾大生产运动",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 976.77,
+      "sources": 4,
+      "chars": 118,
+      "intent": "spot"
+    },
+    {
+      "q": "王家坪是干什么的",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1206.37,
+      "sources": 2,
+      "chars": 148,
+      "intent": "spot"
+    },
+    {
+      "q": "鲁艺旧址讲解一下",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1268.06,
+      "sources": 4,
+      "chars": 126,
+      "intent": "spot"
+    },
+    {
+      "q": "清凉山为什么叫红色新闻山",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1210.34,
+      "sources": 4,
+      "chars": 128,
+      "intent": "spot"
+    },
+    {
+      "q": "黄帝陵的历史",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1617.8,
+      "sources": 3,
+      "chars": 161,
+      "intent": "spot"
+    },
+    {
+      "q": "壶口瀑布有什么看点",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1174.94,
+      "sources": 2,
+      "chars": 131,
+      "intent": "spot"
+    },
+    {
+      "q": "乾坤湾是什么地貌",
+      "expected": "spot",
+      "got": "spot",
+      "ok": true,
+      "latency_ms": 1351.97,
+      "sources": 2,
+      "chars": 123,
+      "intent": "spot"
+    },
+    {
+      "q": "延安有哪些必去的红色景点",
+      "expected": "recommend",
+      "got": "recommend",
+      "ok": true,
+      "latency_ms": 512.37,
+      "sources": 3,
+      "chars": 841,
+      "intent": "recommend"
+    },
+    {
+      "q": "推荐几个值得去的景点",
+      "expected": "recommend",
+      "got": "recommend",
+      "ok": true,
+      "latency_ms": 479.61,
+      "sources": 3,
+      "chars": 1390,
+      "intent": "recommend"
+    },
+    {
+      "q": "洛川苹果多少钱一斤",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 1965.76,
+      "sources": 7,
+      "chars": 150,
+      "intent": "product"
+    },
+    {
+      "q": "延安有哪些地理标志农产品",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 2681.88,
+      "sources": 7,
+      "chars": 165,
+      "intent": "product"
+    },
+    {
+      "q": "延安苹果品牌价值多少",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 1782.79,
+      "sources": 7,
+      "chars": 107,
+      "intent": "product"
+    },
+    {
+      "q": "买什么特产当伴手礼",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 1961.89,
+      "sources": 4,
+      "chars": 132,
+      "intent": "product"
+    },
+    {
+      "q": "甘泉黄酒是什么",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 2225.25,
+      "sources": 4,
+      "chars": 175,
+      "intent": "product"
+    },
+    {
+      "q": "给洛川苹果写一段直播开场",
+      "expected": "ip",
+      "got": "ip",
+      "ok": true,
+      "latency_ms": 558.54,
+      "sources": 4,
+      "chars": 1094,
+      "intent": "ip"
+    },
+    {
+      "q": "写个延安苹果的短视频脚本",
+      "expected": "ip",
+      "got": "ip",
+      "ok": true,
+      "latency_ms": 543.45,
+      "sources": 4,
+      "chars": 1028,
+      "intent": "ip"
+    },
+    {
+      "q": "洛川苹果电商详情页文案",
+      "expected": "ip",
+      "got": "ip",
+      "ok": true,
+      "latency_ms": 497.37,
+      "sources": 4,
+      "chars": 1090,
+      "intent": "ip"
+    },
+    {
+      "q": "给我一段朋友圈助农文案",
+      "expected": "ip",
+      "got": "ip",
+      "ok": true,
+      "latency_ms": 515.71,
+      "sources": 4,
+      "chars": 968,
+      "intent": "ip"
+    },
+    {
+      "q": "企业采购延安苹果怎么介绍",
+      "expected": "ip",
+      "got": "ip",
+      "ok": true,
+      "latency_ms": 598.26,
+      "sources": 4,
+      "chars": 1196,
+      "intent": "ip"
+    },
+    {
+      "q": "宝塔山门票多少钱",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 418.96,
+      "sources": 4,
+      "chars": 594,
+      "intent": "service"
+    },
+    {
+      "q": "枣园开放时间到几点",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 475.55,
+      "sources": 4,
+      "chars": 732,
+      "intent": "service"
+    },
+    {
+      "q": "延安革命纪念馆怎么预约",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 454.61,
+      "sources": 4,
+      "chars": 502,
+      "intent": "service"
+    },
+    {
+      "q": "壶口瀑布门票",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 1070.34,
+      "sources": 4,
+      "chars": 574,
+      "intent": "service"
+    },
+    {
+      "q": "黄帝陵淡季门票价格",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 476.63,
+      "sources": 4,
+      "chars": 592,
+      "intent": "service"
+    },
+    {
+      "q": "明天延安天气怎么样",
+      "expected": "service",
+      "got": "service",
+      "ok": true,
+      "latency_ms": 548.52,
+      "sources": 3,
+      "chars": 470,
+      "intent": "service"
+    },
+    {
+      "q": "西延高铁多久到延安",
+      "expected": "transport",
+      "got": "transport",
+      "ok": true,
+      "latency_ms": 536.92,
+      "sources": 5,
+      "chars": 667,
+      "intent": "transport"
+    },
+    {
+      "q": "延安机场有哪些航线",
+      "expected": "transport",
+      "got": "transport",
+      "ok": true,
+      "latency_ms": 470.54,
+      "sources": 5,
+      "chars": 581,
+      "intent": "transport"
+    },
+    {
+      "q": "西安到延安怎么去",
+      "expected": "transport",
+      "got": "transport",
+      "ok": true,
+      "latency_ms": 564.42,
+      "sources": 5,
+      "chars": 492,
+      "intent": "transport"
+    },
+    {
+      "q": "革命老区振兴有哪些国家政策",
+      "expected": "policy",
+      "got": "policy",
+      "ok": true,
+      "latency_ms": 2039.07,
+      "sources": 3,
+      "chars": 246,
+      "intent": "policy"
+    },
+    {
+      "q": "2026年革命老区政策提到人工智能了吗",
+      "expected": "policy",
+      "got": "policy",
+      "ok": true,
+      "latency_ms": 1261.68,
+      "sources": 4,
+      "chars": 131,
+      "intent": "policy"
+    },
+    {
+      "q": "国发2021年3号文主要目标",
+      "expected": "policy",
+      "got": "policy",
+      "ok": true,
+      "latency_ms": 1197.04,
+      "sources": 3,
+      "chars": 156,
+      "intent": "policy"
+    },
+    {
+      "q": "延安旅游2024年接待多少人",
+      "expected": "history",
+      "got": "history",
+      "ok": true,
+      "latency_ms": 1056.58,
+      "sources": 2,
+      "chars": 98,
+      "intent": "history"
+    },
+    {
+      "q": "延安苹果一年产多少吨",
+      "expected": "product",
+      "got": "product",
+      "ok": true,
+      "latency_ms": 2425.33,
+      "sources": 7,
+      "chars": 1292,
+      "intent": "product"
+    },
+    {
+      "q": "延安农民收入多少",
+      "expected": "history",
+      "got": "history",
+      "ok": true,
+      "latency_ms": 1279.16,
+      "sources": 3,
+      "chars": 122,
+      "intent": "history"
+    },
+    {
+      "q": "怎么申请地理标志",
+      "expected": "policy",
+      "got": "policy",
+      "ok": true,
+      "latency_ms": 1352.06,
+      "sources": 4,
+      "chars": 221,
+      "intent": "policy"
+    }
+  ]
+}
